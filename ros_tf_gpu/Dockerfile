@@ -24,3 +24,7 @@ rosdep update
 RUN apt-get update && \
 apt-get install -y --no-install-recommends \
 python-rosinstall python-rosinstall-generator python-wstool
+
+# tensorflow deps
+RUN apt-get install python-tk
+RUN pip install requests
